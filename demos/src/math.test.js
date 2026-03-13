@@ -1,4 +1,4 @@
-const {sum, multiply, divide} = require('./02-math');
+import {sum, divide, multiply} from './02-math';
 
 test('adds', () => {
   expect(sum(1, 3)).toBe(4);
