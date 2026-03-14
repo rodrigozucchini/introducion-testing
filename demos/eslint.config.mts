@@ -9,14 +9,11 @@ export default defineConfig([
     plugins: { js },
     extends: ["js/recommended"],
     languageOptions: {
+      sourceType: "module",
       globals: {
         ...globals.jest
       }
     }
   },
-  {
-    files: ["**/*.js"],
-    languageOptions: { sourceType: "script" }
-  },
-  tseslint.configs.recommended,
+  tseslint.configs.recommended
 ]);

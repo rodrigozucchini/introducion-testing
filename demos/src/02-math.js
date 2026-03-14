@@ -13,7 +13,7 @@ function divide(a, b) {
   return a / b;
 }
 
-export default {
+export {
   sum,
   multiply,
   divide
